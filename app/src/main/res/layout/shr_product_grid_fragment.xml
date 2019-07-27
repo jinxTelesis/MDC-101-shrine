@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ProductGridFragment">
 
+    <LinearLayout
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/shr_backdrop" />
+
+    </LinearLayout>
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="160dp"
         android:layout_height="180dp"
@@ -68,6 +81,7 @@
         android:layout_marginTop="56dp"
         android:background="@color/productGridBackgroundColor"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="gone"
         android:elevation="6dp">
 
         <androidx.recyclerview.widget.RecyclerView
