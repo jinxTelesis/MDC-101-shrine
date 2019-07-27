@@ -84,9 +84,18 @@
                 android:layout_toLeftOf="@id/next_button"
                 android:text="@string/shr_button_cancel" />
 
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/shr_hint_username">
 
-
-
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
         </RelativeLayout>

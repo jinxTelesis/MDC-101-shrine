@@ -25,7 +25,7 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
             ImageRequester.setImageFromUrl(holder.productImage, product.url)
         }
 
-        
+
     }
 
     override fun getItemCount(): Int {
